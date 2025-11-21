@@ -12,7 +12,7 @@ const BlogList = () => {
     const [blogs, setBlogs] = useState([]);
     const [showBlogs, setShowBlogs] = useState(6);
     useEffect(() => {
-        fetch('https://meta-blog-app-backend-olive.vercel.app/blogs') || fetch('https://meta-blog-app-backend-test.vercel.app/blogs')
+        fetch('https://meta-blog-app-backend-olive.vercel.app/blogs')
         .then(response => response.json())
         .then(data => {
             setBlogs(data.blogs);
