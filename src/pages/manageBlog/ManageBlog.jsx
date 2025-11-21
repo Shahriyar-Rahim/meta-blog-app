@@ -32,7 +32,7 @@ const ManageBlog = () => {
         {blogs.length > 0 ? (
           <table className="w-full text-left table-auto">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="">
                 <th className="p-4 border-b border-slate-600 bg-slate-700">
                   <p className="text-sm font-normal leading-none text-slate-300">
                     Title
@@ -57,7 +57,7 @@ const ManageBlog = () => {
             </thead>
             <tbody>
               {blogs.map((blog, index) => (
-                <tr key={index} className="bg-gray-50">
+                <tr key={index}>
                   <td className="p-4 border-b border-slate-700">
                     <p className="text-sm  font-semibold">
                       <span>{index + 1}. </span>
